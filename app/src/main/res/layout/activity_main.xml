@@ -27,123 +27,26 @@
             android:layout_width="100dp"
             android:layout_weight="1">
             <!--android:layout_margin="@dimen/margenCirculos">-->
-            <ImageButton
-                android:id="@+id/button01"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button02"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button03"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button04"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button05"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button06"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:id="@+id/button07"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
-                android:contentDescription="@string/contentDescription"/>
-        </TableRow>
-        <TableRow
-            android:layout_height="100dp"
-            android:layout_width="100dp"
-            android:layout_weight="1">
-            <!--android:layout_margin="@dimen/margenCirculos">-->
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button11"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button13"
-                android:layout_width="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button14"
-                android:layout_margin="@dimen/margenCirculos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button15"
-                android:layout_width="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
+            <ImageButton style="@style/C4Button"
                 android:id="@+id/button16"
-                android:layout_width="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button"
                 android:contentDescription="@string/contentDescription"/>
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="@dimen/margenCirculos"
-                android:id="@+id/botton17"
-                android:background="@android:color/transparent"
-                android:src="@drawable/c4_button" />
+            <ImageButton style="@style/C4Button"
+                android:id="@+id/button17"
                 android:contentDescription="@string/contentDescription"/>
         </TableRow>
           <TableRow
@@ -151,314 +54,162 @@
               android:layout_weight="1"
               android:layout_width="100dp">
               <!--android:layout_margin="@dimen/margenCirculos">-->
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button21"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button22"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button23"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button24"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button25"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button26"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:id="@+id/botton27"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button" />
-              android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button27"
+                  android:contentDescription="@string/contentDescription"/>
           </TableRow>
           <TableRow
               android:layout_height="100dp"
               android:layout_weight="1"
               android:layout_width="100dp">
-              <!--android:layout_margin="@dimen/margenCirculos">-->
-              <ImageButton
+              <!-->-->
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button31"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button32"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button33"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button34"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button35"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button36"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:id="@+id/botton37"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button" />
-              android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button37"
+                  android:contentDescription="@string/contentDescription"/>
           </TableRow>
           <TableRow
               android:layout_height="100dp"
               android:layout_weight="1"
               android:layout_width="100dp">
-              <!--android:layout_margin="@dimen/margenCirculos">-->
-              <ImageButton
+              <!-->-->
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button41"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button42"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button43"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button44"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button45"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button46"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:id="@+id/botton47"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button" />
-              android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button47"
+                  android:contentDescription="@string/contentDescription"/>
           </TableRow>
           <TableRow
               android:layout_height="100dp"
               android:layout_weight="1"
               android:layout_width="100dp">
-              <!--android:layout_margin="@dimen/margenCirculos">-->
-              <ImageButton
+              <!-->-->
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button51"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button52"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button53"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button54"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button55"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button56"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:id="@+id/botton57"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button" />
-              android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button57"
+                  android:contentDescription="@string/contentDescription"/>
           </TableRow>
-   <!--       <TableRow
+          <TableRow
               android:layout_height="100dp"
+              android:layout_weight="1"
               android:layout_width="100dp">
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button61"
-                  android:layout_width="match_parent"
-                  android:layout_height="40dp"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button62"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button63"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button64"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button65"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
+              <ImageButton style="@style/C4Button"
                   android:id="@+id/button66"
-                  android:layout_width="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:layout_height="match_parent"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button"
                   android:contentDescription="@string/contentDescription"/>
-              <ImageButton
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:layout_margin="@dimen/margenCirculos"
-                  android:id="@+id/botton67"
-                  android:background="@android:color/transparent"
-                  android:src="@drawable/c4_button" />
-              android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button67"
+                  android:contentDescription="@string/contentDescription"/>
+         </TableRow>
+          <TableRow
+              android:layout_height="100dp"
+              android:layout_weight="1"
+              android:layout_width="100dp">
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button71"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button72"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button73"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button74"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button75"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button76"
+                  android:contentDescription="@string/contentDescription"/>
+              <ImageButton style="@style/C4Button"
+                  android:id="@+id/button77"
+                  android:contentDescription="@string/contentDescription"/>
           </TableRow>
--->
 
       </TableLayout>
-
-
-
 
 </RelativeLayout>
