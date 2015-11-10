@@ -1,6 +1,7 @@
 package com.example.glalica.conecta4_v1;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -47,6 +48,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
     /* Detecto que el usuario a realizao un Click y voy
     * a detectar en que posición se ha realizado */
+
     public void onClick (View v){
         pulsado(v);
 
@@ -85,19 +87,47 @@ public class MainActivity extends Activity implements OnClickListener {
                     imagenBoton = (ImageButton) findViewById(ids[i][j]);
                     if (value == 1)
                         imagenBoton.setImageResource(R.drawable.c4_machine_pressed_button);
-                    else if (value == 2)
-                        imagenBoton.setImageResource((R.drawable.c4_human_pressed_button));
-                    else imagenBoton.setImageResource(R.drawable.c4_button);
+                    else {
+                        if (value == 2)
+                            imagenBoton.setImageResource((R.drawable.c4_human_pressed_button));
+                        else
+                            imagenBoton.setImageResource(R.drawable.c4_button);
+                    }
                 }
             }
         }
     }
 
+    public void miDibujarTablero(int i, int j) {
+        int id = 0;
+        ImageButton imagenBoton;
+
+        if (ids[i][j] != 0) {
+            int value = game.getTablero(i, j);
+            imagenBoton = (ImageButton) findViewById(ids[i][j]);
+            if (value == 1) {
+                imagenBoton.setImageResource(R.drawable.c4_machine_pressed_button);
+            } else {
+                if (value == 2) {
+                    imagenBoton.setImageResource((R.drawable.c4_human_pressed_button));
+                } else {
+                    imagenBoton.setImageResource(R.drawable.c4_button);
+                }
+            }
+        }
+    }
+
+
+
     public void pulsado(View v){
         int fila, columna, id=v.getId();
 
-        if (game.tableroLleno()){
+        /*if (game.tableroLleno()){
             resultadoTextView.setText(R.string.fin_del_juego);
+            return;
+        }*/
+        if (game.finalJuego()){
+            Toast.makeText(this, "La partida ha terminado", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -109,10 +139,27 @@ public class MainActivity extends Activity implements OnClickListener {
                     Toast.LENGTH_SHORT).show();
             return;
         }
+
         game.ponerJugador(fila, columna);
-        dibujarTablero();
+        //Mi dibujar tablero
+        //dibujarTablero();
+
+        if (game.comprobarCuatro(Game.JUGADOR)){
+            dibujarTablero();
+            //resultadoTextView.setText("Ganas la partida");
+            openDialog();
+            return;
+        }
+
         game.juegaMaquina();
-        dibujarTablero();
+
+        if (game.comprobarCuatro(Game.MAQUINA)){
+            dibujarTablero();
+            //resultadoTextView.setText("Gana la máquina");
+            openDialog2();
+            return;
+        }
+        dibujarTablero(); //**********************
     }
 
     private int deIdentificadorAFila(int id){
@@ -129,6 +176,21 @@ public class MainActivity extends Activity implements OnClickListener {
                 if (ids[i][j] == id)
                     return j;
         return -1;
+    }
+    public void openDialog2() {
+        final Dialog dialog = new Dialog(this); // context, this etc.
+
+        dialog.setContentView(R.layout.dialogo2);
+        dialog.setTitle("Noticia!");
+        dialog.show();
+    }
+
+    public void openDialog() {
+        final Dialog dialog = new Dialog(this); // context, this etc.
+
+        dialog.setContentView(R.layout.dialogo);
+        dialog.setTitle("Noticia!");
+        dialog.show();
     }
 }
 

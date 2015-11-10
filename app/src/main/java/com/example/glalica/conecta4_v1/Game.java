@@ -4,16 +4,15 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-/**
- * Created by glalica on 07/11/2015.
- */
 public class Game {
     static final int NFILAS = 7;
     static final int NCOLUMNAS =7;
     static final int VACIO = 0;
     static final int MAQUINA =1;
     static final int JUGADOR =2;
-
+    private final String MAQUINASTR="1111";
+    private final String JUGADORSTR="2222";
+    private boolean juego_activo=true;
     private int tablero[][];
 
     /* Comienza el juego poniendo todo el tablero vacio */
@@ -36,22 +35,10 @@ public class Game {
 
     }
 
-
-    /*************************************************************************
-     Parametros: indices i y j del tablero.
-     Retorno: cierto si la posicion tablero[i][j] esta vacia (su valor
-     es VACIO) y falso en caso contrario
-     *************************************************************************/
-
     public boolean estaVacio(int i, int j) {
         return (tablero[i][j]== VACIO);
     }
 
-    /*************************************************************************
-     Parametros: indices i y j del tablero.
-     Retorno: cierto si la posicion tablero[i][j] esta ocupada por el
-     jugador (su valor es JUGADOR) y falso en caso contrario
-     *************************************************************************/
     public boolean estaJugador(int i, int j) {
         return tablero[i][j] == JUGADOR;
     }
@@ -65,17 +52,9 @@ public class Game {
             for (int j=0; j<NCOLUMNAS; j++)
                 if (tablero[i][j] == VACIO)
                     return false;
-
         return true;
     }
 
-    /*************************************************************************
-     Parametros: indices i y j del tablero.
-     Retorno: cierto si se puede colocar ficha en la posicion (i,j) del
-     tablero. Debes comprobar que esa posicion del tablero esta vacia
-     (su valor es VACIO) y que es la posicion vacia mas baja del tablero.
-     En caso contrario, la funcion debe devolver false.
-     *************************************************************************/
     public boolean sePuedeColocarFicha(int i, int j){
         if (i<(NFILAS-1))
             return tablero[i][j] == VACIO && !estaVacio(i+1,j);
@@ -83,20 +62,18 @@ public class Game {
             return tablero[i][j] == VACIO;
     }
 
-
     public void juegaMaquina() {
         int i;
-        int fila = -1, columna;
+        int fila = -1, columna=0;
         Random r = new Random();
 
         do {
             columna = r.nextInt(NCOLUMNAS);
-
-            for (i = NFILAS-1; i > 0; i--)
-                if (tablero[i][columna] == VACIO) {
-                    fila = i;
-                    break;
-                }
+            for (i = NFILAS-1; i >0 ; i--)
+                if (tablero[i][columna] == VACIO){
+                        fila = i;
+                        break;
+                    }
         } while (fila < 0);
 
         tablero[fila][columna] = MAQUINA;
@@ -106,9 +83,97 @@ public class Game {
         return tablero[i][j];
     }
 
+    public boolean estaMaquina(int i, int j) {
+        return tablero[i][j] == MAQUINA;
+    }
 
-   /*
-    Además de estos métodos será conveniente que añadas métodos de acceso al tablero para consultar el estado de cada posición.
+     public void setJugador(int i, int j) {
+        tablero[i][j] = JUGADOR;
+    }
 
+    public boolean finalJuego() {
+        if (tableroLleno() || !juego_activo)
+            return true;
+        return false;
+    }
+
+    boolean comprobarCuatro(int turno) {
+        if (comprobarFilas(turno) || comprobarColumnas(turno) || comprobarDiagonales(turno)) {
+            juego_activo = false;
+            return true;
+        }
+        return false;
+    }
+
+    boolean comprobarFilas(int turno) {
+        String cadena = turno == MAQUINA ? MAQUINASTR : JUGADORSTR;
+
+        for (int i = 0; i < NFILAS; i++) {
+            String str = "";
+            for (int j = 0; j < NCOLUMNAS; j++)
+                str += Integer.toString(tablero[i][j]);
+            if (str.contains(cadena))
+                return true;
+        }
+        return false;
+    }
+
+    /*************************************************************************
+     Completa este metodo.
+     Parametro: turno que puede ser MAQUINA o JUGADOR.
+     Retorno: true si se el jugador correspondiente al turno tiene cuatro fichas
+     contiguas verticalmente, o false en caso contrario.
+     *************************************************************************/
+    boolean comprobarColumnas(int turno) {
+        String cadena = turno == MAQUINA ? MAQUINASTR : JUGADORSTR;
+
+        for (int j=0; j<NCOLUMNAS; j++){
+            String str = "";
+            for (int i=0; i<NFILAS; i++)
+                str += Integer.toString((tablero[i][j]));
+            if (str.contains(cadena)) return true;
+        }
+        return false;
+    }
+
+    boolean comprobarDiagonales(int turno) {
+        String cadena = turno == MAQUINA ? MAQUINASTR : JUGADORSTR;
+
+        for (int i = 0; i < 3; i++) {
+            String str = "";
+            for (int k = 0; k < 6 - i; k++)
+                str += Integer.toString(tablero[i + k][k]);
+            if (str.contains(cadena))
+                return true;
+        }
+
+        for (int j = 1; j < 4; j++) {
+            String str = "";
+            for (int k = 0; k < 7 - j; k++)
+                str += Integer.toString(tablero[k][j + k]);
+            if (str.contains(cadena))
+                return true;
+        }
+
+        return false;
+    }
+
+
+/*    public void juegaMaquina() {
+        int i;
+        int fila = -1, columna = 0;
+        Random r = new Random();
+
+        do {
+            columna = r.nextInt(NCOLUMNAS);
+            for (i = 0; i < NFILAS; i++)
+                if (tablero[i][columna] == VACIO) {
+                    fila = i;
+                    break;
+                }
+        } while (fila < 0);
+        tablero[fila][columna] = MAQUINA;
+    }
 */
+
 }

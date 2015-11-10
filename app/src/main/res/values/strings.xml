@@ -4,4 +4,5 @@
     <string name="contentDescription">Botón de Conecta 4</string>
     <string name="fin_del_juego">Fin del Juego</string>
     <string name="nosepuedecolocarficha">No se puede colocar ficha</string>
+    <string name="pantallaInicio">Pantalla de inicio del Juego</string>
 </resources>
