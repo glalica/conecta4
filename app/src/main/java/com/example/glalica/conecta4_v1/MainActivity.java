@@ -192,6 +192,17 @@ public class MainActivity extends Activity implements OnClickListener {
         dialog.setTitle("Noticia!");
         dialog.show();
     }
+
+    protected void onResume(){
+        super.onResume();
+        Musica.play(this,R.raw.bitquest);
+    }
+
+    protected void onPause(){
+        super.onPause();
+        Musica.stop(this);
+    }
+
 }
 
 
