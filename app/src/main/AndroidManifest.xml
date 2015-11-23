@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.glalica.conecta4_v1">
+    package="com.example.glalica.conecta4_v1"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden|screenSize">
         <activity
             android:name=".Initial"
-            android:label="Inicio">
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity">
+            android:label="">
             <intent-filter>
-                <action android:name="android.intent.action.MAINACTIVITY" />
+                <action android:name="com.example.glalica.conecta4_v1.MAINACTIVITY"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".About"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:label="" >
+            <intent-filter>
+                <action android:name="com.example.glalica.conecta4_v1.ABOUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CCCPreference"
+            android:label="">
+            <intent-filter>
+                <action android:name="com.example.glalica.conecta4_v1.CCCPREFERENCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
     </application>
+
 </manifest>

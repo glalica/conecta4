@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/firstCategoryPrefTitle">
+        <EditTextPreference
+            android:key="playerName"
+            android:title="@string/editTextPrefTitle"
+            android:summary="@string/editTextPrefSummary"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/secondCategoryPrefTitle">
+        <ListPreference
+            android:key="figure"
+            android:title="@string/ListPrefTitle"
+            android:summary="@string/ListPrefSummary"
+            android:entries="@array/figures"
+            android:entryValues="@array/figureCodes"
+            android:dialogTitle="@string/ListPrefDialogTitle"
+            android:defaultValue="cc0000000001110001111100110110011111000111000000000"/>
+        <CheckBoxPreference
+            android:key="music"
+            android:title="@string/checBoxPrefTitle"
+            android:summary="@string/checBoxPrefSummary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

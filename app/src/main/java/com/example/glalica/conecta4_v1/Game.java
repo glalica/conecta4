@@ -14,21 +14,30 @@ public class Game {
     private final String JUGADORSTR="2222";
     private boolean juego_activo=true;
     private int tablero[][];
+    private int casillas;
 
     /* Comienza el juego poniendo todo el tablero vacio */
     public Game(){
-        tablero = new int[NFILAS][NCOLUMNAS];
 
+        tablero = new int[NFILAS][NCOLUMNAS];
+        reiniciarTablero();
+        reiniciarCasillas();
+    }
+
+    public void reiniciarTablero(){
         /* Lleno el tablero con CEROS ya que está vacío.-*/
+        juego_activo=true;
         for (int i=0; i<NFILAS; i++)
             for (int j=0; j<NCOLUMNAS; j++)
                 tablero[i][j] = VACIO;
-    }
 
+
+    }
     public void jugamos(int i, int j){
 //        if (estaVacio(i,j))
             if (sePuedeColocarFicha(i,j)) {
                 ponerJugador(i, j);
+                incrementarCasillas();
                             }
             /* Deberua mandar un mensaje per no se como*/
             /* POSICION ERRONEA */
@@ -47,13 +56,18 @@ public class Game {
         tablero[i][j] = JUGADOR;
     }
 
-    public boolean tableroLleno() {
+    public void incrementarCasillas(){casillas=casillas+1; }
+    public int obtenerCasillas(){return casillas; }
+    public void reiniciarCasillas(){casillas=0;}
+    public boolean tableroLleno(){ return (casillas==(NCOLUMNAS*NFILAS)); }
+
+/*    public boolean tableroLleno() {
         for (int i=0; i<NFILAS; i++)
             for (int j=0; j<NCOLUMNAS; j++)
                 if (tablero[i][j] == VACIO)
                     return false;
         return true;
-    }
+    }*/
 
     public boolean sePuedeColocarFicha(int i, int j){
         if (i<(NFILAS-1))
@@ -77,6 +91,7 @@ public class Game {
         } while (fila < 0);
 
         tablero[fila][columna] = MAQUINA;
+        incrementarCasillas();
     }
 
     public int getTablero(int i, int j) {

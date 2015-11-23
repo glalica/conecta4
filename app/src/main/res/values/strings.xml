@@ -5,4 +5,20 @@
     <string name="fin_del_juego">Fin del Juego</string>
     <string name="nosepuedecolocarficha">No se puede colocar ficha</string>
     <string name="pantallaInicio">Pantalla de inicio del Juego</string>
+    <string name="aboutText">Acerca de</string>
+    <string name="aboutMessage">Conecta 4 es un juego de dos jugadores, humano contra máquina.
+        En él, deberás poner 4 fichas en linea ya sea en linea horizontal, vertical o en diagonal\nPrueba tus habilidades para ganarle a la máquina!</string>
+    <string name="sendMessageText">Mensaje a enviar</string>
+    <string name="gameOverTitle">Fin del Juego</string>
+    <string name="gameOverMessage">¿Quiere jugar otra partida?</string>
+    <string name="firstCategoryPrefTitle">DATOS PERSONALES</string>
+    <string name="secondCategoryPrefTitle">AJUSTES DEL JUEGO</string>
+    <string name="editTextPrefTitle">Nombre del jugador</string>
+    <string name="editTextPrefSummary">Pulse para teclear el nombre del jugador</string>
+    <string name="ListPrefTitle">Tipo de figura</string>
+    <string name="ListPrefSummary">Pulse para mostrar la lista</string>
+    <string name="ListPrefDialogTitle">Elija la figura inicial</string>
+    <string name="checBoxPrefTitle">Música de fondo</string>
+    <string name="checBoxPrefSummary">Marque si desea escuchar música</string>
+    <string name="preferencesText">Preferencias</string>
 </resources>

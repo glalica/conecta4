@@ -6,4 +6,7 @@
     <color name="colorBoton">#8DE7EF</color>
     <color name="colorHumano">#FFAA00</color>
     <color name="colorMachine">#DB563F</color>
+    <color name="colorMenu">#DB563F</color>
+    <color name="actionbar_background">#303f9f</color>
+    <color name="actionbar_text">#ffffff</color>
 </resources>
