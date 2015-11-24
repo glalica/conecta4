@@ -8,12 +8,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MotionEvent;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Initial extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initial);
+
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.initial);
+        ImageView imageView = (ImageView) findViewById(R.id.initial);
+        imageView.startAnimation(animation);
         //Cargamos las preferencias por omisión
         /* false:indica que éstos parámetros solo se deben
         * cargar la primera vez que se llama a la función */
