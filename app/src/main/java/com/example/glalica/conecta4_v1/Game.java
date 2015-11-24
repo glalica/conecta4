@@ -47,15 +47,12 @@ public class Game {
     public boolean estaVacio(int i, int j) {
         return (tablero[i][j]== VACIO);
     }
-
     public boolean estaJugador(int i, int j) {
         return tablero[i][j] == JUGADOR;
     }
-
     public void ponerJugador(int i, int j) {
         tablero[i][j] = JUGADOR;
     }
-
     public void incrementarCasillas(){casillas=casillas+1; }
     public int obtenerCasillas(){return casillas; }
     public void reiniciarCasillas(){casillas=0;}
@@ -173,6 +170,20 @@ public class Game {
         return false;
     }
 
+    public String tableroToString(){
+        String str = "";
+        for (int i=0; i<NFILAS; i++)
+            for (int j=0; j<NCOLUMNAS; j++)
+                str += tablero[i][j];
+        return str;
+
+    }
+
+    public void stringToTablero (String str){
+        for (int i=0, cont=0; i<NFILAS; i++)
+            for (int j=0; j<NCOLUMNAS; j++)
+                tablero[i][j] = str.charAt(cont++)-'0';
+    }
 
 /*    public void juegaMaquina() {
         int i;

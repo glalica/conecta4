@@ -269,8 +269,20 @@ public class MainActivity extends Activity implements OnClickListener {
         editor.commit();
     }
 
+    public void onSaveInstanceState(Bundle outState){
+        outState.putString("TABLERO", game.tableroToString());
+        super.onSaveInstanceState(outState);
+    }
 
-    
+    public void onRestoreInstanceState(Bundle savedInstancesState){
+        super.onRestoreInstanceState(savedInstancesState);
+        String tablero = savedInstancesState.getString("TABLERO");
+        game.stringToTablero(tablero);
+        dibujarTablero();
+    }
+
+
+
 }
 
 
