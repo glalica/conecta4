@@ -5,4 +5,11 @@
     android:thicknessRatio="8"
     android:useLevel="false">
     <solid android:color="@color/colorBoton"/>
+    <!--<stroke
+        android:width="50dp"
+        android:color="@color/colorBoton"/>-->
+    <!--<size
+        android:height="20dp"
+        android:width="20dp" />-->
 </shape>
+

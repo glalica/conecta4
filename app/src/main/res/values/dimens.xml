@@ -6,6 +6,10 @@
     <dimen name="pesofila">1dp</dimen>
     <dimen name="margenTopTitulo">40sp</dimen>
     <dimen name="margenBottonTitulo">40sp</dimen>
-    <dimen name="sizeTitulo">40sp</dimen>
+    <dimen name="sizeTitulo">30sp</dimen>
+    <dimen name="sizeTitulo_land">30sp</dimen>
+    <dimen name="margenLeftButtonLand">80dp</dimen>
+    <dimen name="margenRightButtonLand">80dp</dimen>
+    <dimen name="layoutWidthImageButton">10dp</dimen>
 </resources>
 
