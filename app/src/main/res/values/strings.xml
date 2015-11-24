@@ -21,4 +21,6 @@
     <string name="checBoxPrefTitle">Música de fondo</string>
     <string name="checBoxPrefSummary">Marque si desea escuchar música</string>
     <string name="preferencesText">Preferencias</string>
+    <string name="jugadorGana">Has ganado!\n¿Quieres volver a jugar?</string>
+    <string name="maquinaGana">Has perdido!\n¿Quieres volver a jugar?</string>
 </resources>

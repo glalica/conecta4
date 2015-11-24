@@ -21,12 +21,10 @@ public class AlertDialogFragment extends DialogFragment {
                 alertDialogBuilder.setMessage(R.string.gameOverMessage);
             case 0:
                 alertDialogBuilder.setTitle(R.string.gameOverTitle);
-                alertDialogBuilder.setMessage("Has perdido!" +"\n"+
-                        "¿Quieres volver a jugar?");
+                alertDialogBuilder.setMessage(R.string.maquinaGana);
             case 1:
                 alertDialogBuilder.setTitle(R.string.gameOverTitle);
-                alertDialogBuilder.setMessage("Has ganado!" +"\n"+
-                        "¿Quieres volver a jugar?");
+                alertDialogBuilder.setMessage(R.string.jugadorGana);
         }
         alertDialogBuilder.setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {

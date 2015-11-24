@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Conecta4</string>
+    <string name="titulo">CONECTA 4</string>
+    <string name="contentDescription">Conecta button 4</string>
+    <string name="fin_del_juego">Game over</string>
+    <string name="nosepuedecolocarficha">Wrong position</string>
+    <string name="pantallaInicio">Home screen</string>
+    <string name="aboutText">About</string>
+    <string name="aboutMessage">Conecta 4 is a two player game, man against machine.
+        You must put 4 card in line, horizontally, vertically or diagonally\n Test your skills to beat the machine! </string>
+    <string name="sendMessageText">Message</string>
+    <string name="gameOverTitle">Game over</string>
+    <string name="gameOverMessage">Would you like to play again?</string>
+    <string name="firstCategoryPrefTitle">Personal data</string>
+    <string name="secondCategoryPrefTitle">Settings</string>
+    <string name="editTextPrefTitle">Name</string>
+    <string name="editTextPrefSummary">Click to enter the player\'s name</string>
+    <string name="ListPrefTitle">Figure type</string>
+    <string name="ListPrefSummary">Click to display the list</string>
+    <string name="ListPrefDialogTitle">Choose the initial figure</string>
+    <string name="checBoxPrefTitle">Music</string>
+    <string name="checBoxPrefSummary">Check if you like background music</string>
+    <string name="preferencesText">Settings</string>
+    <string name="jugadorGana">You win!\nWould you like to play again?</string>
+    <string name="maquinaGana">You lost!\nWould you like to play again?</string>
+</resources>
